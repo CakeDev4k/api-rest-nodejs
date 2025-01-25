@@ -2,8 +2,6 @@ import { config } from 'dotenv'
 import { z } from 'zod'
 
 if (process.env.NODE_ENV === 'test') {
-  console.log(process.env.NODE_ENV)
-
   config({ path: '.env.test', override: true })
 } else {
   config()
